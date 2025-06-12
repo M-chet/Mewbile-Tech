@@ -143,11 +143,6 @@ if __name__ == '__main__':
     customers = create_customers(input_dictionary)
     process_event_history(input_dictionary, customers)
 
-    # ----------------------------------------------------------------------
-    # NOTE: You do not need to understand any of the implementation below,
-    # to be able to solve this assignment. However, feel free to
-    # read it anyway, just to get a sense of how the application runs.
-    # ----------------------------------------------------------------------
 
     # Gather all calls to be drawn on screen for filtering, but we only want
     # to plot each call only once, so only plot the outgoing calls to screen.

@@ -1,16 +1,3 @@
-"""
-CSC148, Winter 2025
-Assignment 1
-
-This code is provided solely for the personal and private use of
-students taking the CSC148 course at the University of Toronto.
-Copying for purposes other than this use is expressly prohibited.
-All forms of distribution of this code, whether as given or with
-any changes, are expressly prohibited.
-
-All of the files in this directory and all subdirectories are:
-Copyright (c) 2025 Bogdan Simion, Diane Horton, Jacqueline Smith
-"""
 import datetime
 from math import ceil
 from typing import Optional
@@ -65,7 +52,6 @@ class Contract:
         Store the <bill> argument in this contract and set the appropriate rate
         per minute and fixed cost.
 
-        DO NOT CHANGE THIS METHOD
         """
         raise NotImplementedError
 

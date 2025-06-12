@@ -26,10 +26,3 @@ this application.
    suite.
 2. Run `python application.py` to launch the visual interface.
 3. Sample tests can be executed with `pytest sample_tests.py`.
-
-## Notes on Errors
-
-Running the tests in this environment fails because the `pygame` package is not
-installed.  The application also expects the dataset and image assets to be
-located in the `data/` directory.  Ensure that this directory exists and
-contains the required files as documented in `ASSETS.md`.

@@ -1,16 +1,3 @@
-"""
-CSC148, Winter 2025
-Assignment 1
-
-This code is provided solely for the personal and private use of
-students taking the CSC148 course at the University of Toronto.
-Copying for purposes other than this use is expressly prohibited.
-All forms of distribution of this code, whether as given or with
-any changes, are expressly prohibited.
-
-All of the files in this directory and all subdirectories are:
-Copyright (c) 2025 Bogdan Simion, Diane Horton, Jacqueline Smith
-"""
 from typing import Union
 
 
@@ -91,11 +78,6 @@ class Bill:
         """
         return self.min_rate * self.billed_min + self.fixed_cost
 
-    # ----------------------------------------------------------
-    # NOTE: You do not need to understand the implementation of
-    # the following method, to be able to solve this assignment
-    # but feel free to read it to get a sense of what it does.
-    # ----------------------------------------------------------
 
     def get_summary(self) -> dict[str, Union[float, int]]:
         """ Return a bill summary as a dictionary containing the bill details.
