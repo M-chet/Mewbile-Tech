@@ -13,6 +13,7 @@ Copyright (c) 2025 Bogdan Simion, Diane Horton, Jacqueline Smith
 """
 import datetime
 import json
+import os
 
 from contract import Contract, TermContract, PrepaidContract, MTMContract
 from customer import Customer
@@ -28,7 +29,8 @@ def import_data() -> dict[str, list[dict]]:
 
     Precondition: the dataset file must be in the json format.
     """
-    with open("dataset.json") as o:
+    data_path = os.path.join(os.path.dirname(__file__), "data", "dataset.json")
+    with open(data_path) as o:
         log = json.load(o)
         return log
 
@@ -96,9 +98,6 @@ def process_event_history(log: dict[str, list[dict]],
     Construct Call objects from <log> and register the Call into the
     corresponding customer's call history.
 
-    Hint: You must advance all customers to a new month using the new_month()
-    function, everytime a new month is detected for the current event you are
-    extracting.
 
     Preconditions:
     - All calls are ordered chronologically (based on the call's date and time),
@@ -153,11 +152,6 @@ if __name__ == '__main__':
     customers = create_customers(input_dictionary)
     process_event_history(input_dictionary, customers)
 
-    # ----------------------------------------------------------------------
-    # NOTE: You do not need to understand any of the implementation below,
-    # to be able to solve this assignment. However, feel free to
-    # read it anyway, just to get a sense of how the application runs.
-    # ----------------------------------------------------------------------
 
     # Gather all calls to be drawn on screen for filtering, but we only want
     # to plot each call only once, so only plot the outgoing calls to screen.

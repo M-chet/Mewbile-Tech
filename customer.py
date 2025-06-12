@@ -79,10 +79,6 @@ class Customer:
         return fee
 
     # ----------------------------------------------------------
-    # NOTE: You do not need to understand the implementation of
-    # the following methods, to be able to solve this assignment
-    # but feel free to read them to get a sense of what these do.
-    # ----------------------------------------------------------
 
     def add_phone_line(self, pline: PhoneLine) -> None:
         """ Add a new PhoneLine to this customer.

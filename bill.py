@@ -92,10 +92,6 @@ class Bill:
         return self.min_rate * self.billed_min + self.fixed_cost
 
     # ----------------------------------------------------------
-    # NOTE: You do not need to understand the implementation of
-    # the following method, to be able to solve this assignment
-    # but feel free to read it to get a sense of what it does.
-    # ----------------------------------------------------------
 
     def get_summary(self) -> dict[str, Union[float, int]]:
         """ Return a bill summary as a dictionary containing the bill details.

@@ -36,10 +36,6 @@ from customer import Customer
 from filter import Filter, DurationFilter, CustomerFilter, LocationFilter, ResetFilter
 
 # ----------------------------------------------------------------------------
-# NOTE: You do not need to understand any of the visualization details from
-# this module, to be able to solve this assignment. However, feel free to read
-# it for the fun of understanding the visualization system.
-# ----------------------------------------------------------------------------
 
 WHITE = (255, 255, 255)
 LINE_COLOUR = (0, 64, 125)

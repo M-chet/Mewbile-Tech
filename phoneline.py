@@ -95,10 +95,6 @@ class PhoneLine:
         return self.contract.cancel_contract()
 
     # ----------------------------------------------------------
-    # NOTE: You do not need to understand the implementation of
-    # the following methods, to be able to solve this assignment
-    # but feel free to read them to get a sense of what these do.
-    # ----------------------------------------------------------
 
     def get_number(self) -> str:
         """ Return the phone number for this line

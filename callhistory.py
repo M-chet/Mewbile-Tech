@@ -54,10 +54,6 @@ class CallHistory:
             self.incoming_calls[find] = [call]
 
     # ----------------------------------------------------------
-    # NOTE: You do not need to understand the implementation of
-    # the following methods, to be able to solve this assignment
-    # but feel free to read them to get a sense of what these do.
-    # ----------------------------------------------------------
 
     def get_monthly_history(self, month: int = None, year: int = None) -> \
             tuple[list[Call], list[Call]]:

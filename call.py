@@ -22,11 +22,6 @@ START_CALL_SPRITE = 'data/call-start-2.png'
 END_CALL_SPRITE = 'data/call-end-2.png'
 
 
-# ----------------------------------------------------------------------------
-# NOTE: You do not need to understand the implementation of the Drawable class
-# to be able to solve this assignment. However, feel feel free to read it for
-# the fun of understanding the visualization system.
-# ----------------------------------------------------------------------------
 
 class Drawable:
     """A class for objects that the graphical renderer can draw.
@@ -137,10 +132,6 @@ class Call:
         """
         return self.time.month, self.time.year
 
-    # ----------------------------------------------------------
-    # NOTE: You do not need to understand the implementation of
-    # the following methods, to be able to solve this assignment
-    # but feel free to read them to get a sense of what these do.
     # ----------------------------------------------------------
 
     def get_drawables(self) -> list[Drawable]:
