@@ -1,16 +1,4 @@
-"""
-CSC148, Winter 2025
-Assignment 1
-
-This code is provided solely for the personal and private use of
-students taking the CSC148 course at the University of Toronto.
-Copying for purposes other than this use is expressly prohibited.
-All forms of distribution of this code, whether as given or with
-any changes, are expressly prohibited.
-
-All of the files in this directory and all subdirectories are:
-Copyright (c) 2025 Bogdan Simion, Diane Horton, Jacqueline Smith
-"""
+"""Customer information and billing utilities."""
 from typing import Union
 from phoneline import PhoneLine
 from call import Call
@@ -78,11 +66,7 @@ class Customer:
                 fee = pl.cancel_line()
         return fee
 
-    # ----------------------------------------------------------
-    # NOTE: You do not need to understand the implementation of
-    # the following methods, to be able to solve this assignment
-    # but feel free to read them to get a sense of what these do.
-    # ----------------------------------------------------------
+
 
     def add_phone_line(self, pline: PhoneLine) -> None:
         """ Add a new PhoneLine to this customer.

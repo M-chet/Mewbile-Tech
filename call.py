@@ -1,16 +1,4 @@
-"""
-CSC148, Winter 2025
-Assignment 1
-
-This code is provided solely for the personal and private use of
-students taking the CSC148 course at the University of Toronto.
-Copying for purposes other than this use is expressly prohibited.
-All forms of distribution of this code, whether as given or with
-any changes, are expressly prohibited.
-
-All of the files in this directory and all subdirectories are:
-Copyright (c) 2025 Bogdan Simion, Diane Horton, Jacqueline Smith
-"""
+"""Call records and associated drawing utilities."""
 import datetime
 import os
 from typing import Optional
@@ -22,11 +10,7 @@ START_CALL_SPRITE = 'data/call-start-2.png'
 END_CALL_SPRITE = 'data/call-end-2.png'
 
 
-# ----------------------------------------------------------------------------
-# NOTE: You do not need to understand the implementation of the Drawable class
-# to be able to solve this assignment. However, feel feel free to read it for
-# the fun of understanding the visualization system.
-# ----------------------------------------------------------------------------
+
 
 class Drawable:
     """A class for objects that the graphical renderer can draw.
@@ -132,16 +116,16 @@ class Call:
         self.connection = Drawable(linelimits=(src_loc, dst_loc))
 
     def get_bill_date(self) -> tuple[int, int]:
-        """ Return the billing date for this Call, as a tuple containing the
-        month and the year
+        """Return the billing month and year.
+
+        >>> import datetime
+        >>> c = Call('a', 'b', datetime.datetime(2022, 1, 1, 0, 0), 60, (0, 0), (1, 1))
+        >>> c.get_bill_date()
+        (1, 2022)
         """
         return self.time.month, self.time.year
 
-    # ----------------------------------------------------------
-    # NOTE: You do not need to understand the implementation of
-    # the following methods, to be able to solve this assignment
-    # but feel free to read them to get a sense of what these do.
-    # ----------------------------------------------------------
+
 
     def get_drawables(self) -> list[Drawable]:
         """ Return the list of drawable sprites for this Call

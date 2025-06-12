@@ -1,27 +1,4 @@
-"""
-CSC148, Winter 2025
-Assignment 1
-
-This code is provided solely for the personal and private use of
-students taking the CSC148 course at the University of Toronto.
-Copying for purposes other than this use is expressly prohibited.
-All forms of distribution of this code, whether as given or with
-any changes, are expressly prohibited.
-
-All of the files in this directory and all subdirectories are:
-Copyright (c) 2025 Bogdan Simion, Diane Horton, Jacqueline Smith
-
-=== Module Description ===
-
-This file contains the Visualizer class, which is responsible for interacting
-with Pygame, the graphics library we're using for this assignment.
-There's quite a bit in this file, but you aren't responsible for most of it.
-
-It also contains the Map class, which is responsible for converting between
-longitude/latitude coordinates and pixel coordinates on the pygame window.
-
-DO NOT CHANGE ANY CODE IN THIS FILE, unless instructed in the handout.
-"""
+"""Pygame-based visualizer used to display call activity."""
 import math
 import os
 import threading
@@ -33,13 +10,14 @@ import pygame
 
 from call import Drawable, Call
 from customer import Customer
-from filter import Filter, DurationFilter, CustomerFilter, LocationFilter, ResetFilter
+from filter import (
+    Filter,
+    DurationFilter,
+    CustomerFilter,
+    LocationFilter,
+    ResetFilter,
+)
 
-# ----------------------------------------------------------------------------
-# NOTE: You do not need to understand any of the visualization details from
-# this module, to be able to solve this assignment. However, feel free to read
-# it for the fun of understanding the visualization system.
-# ----------------------------------------------------------------------------
 
 WHITE = (255, 255, 255)
 LINE_COLOUR = (0, 64, 125)

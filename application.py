@@ -1,16 +1,4 @@
-"""
-CSC148, Winter 2025
-Assignment 1
-
-This code is provided solely for the personal and private use of
-students taking the CSC148 course at the University of Toronto.
-Copying for purposes other than this use is expressly prohibited.
-All forms of distribution of this code, whether as given or with
-any changes, are expressly prohibited.
-
-All of the files in this directory and all subdirectories are:
-Copyright (c) 2025 Bogdan Simion, Diane Horton, Jacqueline Smith
-"""
+"""Main application and helper functions for the MewbileTech demo."""
 import datetime
 import json
 
@@ -153,11 +141,7 @@ if __name__ == '__main__':
     customers = create_customers(input_dictionary)
     process_event_history(input_dictionary, customers)
 
-    # ----------------------------------------------------------------------
-    # NOTE: You do not need to understand any of the implementation below,
-    # to be able to solve this assignment. However, feel free to
-    # read it anyway, just to get a sense of how the application runs.
-    # ----------------------------------------------------------------------
+
 
     # Gather all calls to be drawn on screen for filtering, but we only want
     # to plot each call only once, so only plot the outgoing calls to screen.
