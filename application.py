@@ -13,6 +13,7 @@ Copyright (c) 2025 Bogdan Simion, Diane Horton, Jacqueline Smith
 """
 import datetime
 import json
+import os
 
 from contract import Contract, TermContract, PrepaidContract, MTMContract
 from customer import Customer
@@ -28,7 +29,8 @@ def import_data() -> dict[str, list[dict]]:
 
     Precondition: the dataset file must be in the json format.
     """
-    with open("dataset.json") as o:
+    data_path = os.path.join(os.path.dirname(__file__), "data", "dataset.json")
+    with open(data_path) as o:
         log = json.load(o)
         return log
 
